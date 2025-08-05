@@ -1413,7 +1413,7 @@ function getProjetosPendentesJustificativa($pdo, $usuarioId, $perfilAcesso, $usu
                           DATE(p.dtliberadookr) < ? OR 
                           (DATE(p.dtliberadookr) = ? AND ?)
                       )
-               ) as subquery
+               ) as subquery 
          )
     ";
     
