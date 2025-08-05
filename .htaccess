@@ -1,0 +1,24 @@
+RewriteEngine On
+
+# Forçar HTTPS
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Remover o .php
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+# Redirecionar suporte.php?prioridade=XXX para /suporte/XXX
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /suporte\.php\?prioridade=([^&\ ]+)
+RewriteRule ^suporte\.php$ /suporte/%1? [R=302,L]
+
+# Reescrever /suporte/XXX para suporte.php?prioridade=XXX
+RewriteRule ^suporte/([^/]+)$ suporte.php?prioridade=$1 [L]
+
+# Para lidar com a URL /suporte/ sem prioridade definida
+RewriteRule ^suporte/?$ suporte.php [L]
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Este domínio herda o pacote “PHP”.
+# php -- END cPanel-generated handler, do not edit

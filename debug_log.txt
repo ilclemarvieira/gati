@@ -1,0 +1,48 @@
+Requisição recebida em 2024-09-24 22:41:54
+Dados recebidos - osId: 54, highlighted: 1
+Conteúdo de $_POST: Array
+(
+    [osId] => 54
+    [highlighted] => 1
+)
+
+Requisição recebida em 2024-09-25 20:28:28
+Dados recebidos - osId: 53, highlighted: 1
+Conteúdo de $_POST: Array
+(
+    [osId] => 53
+    [highlighted] => 1
+)
+
+Requisição recebida em 2024-09-25 20:28:29
+Dados recebidos - osId: 54, highlighted: 0
+Conteúdo de $_POST: Array
+(
+    [osId] => 54
+    [highlighted] => 0
+)
+
+Requisição recebida em 2024-10-17 20:17:53
+Dados recebidos - osId: 60, highlighted: 1
+Conteúdo de $_POST: Array
+(
+    [osId] => 60
+    [highlighted] => 1
+)
+
+Requisição recebida em 2024-11-22 21:36:53
+Dados recebidos - osId: 54, highlighted: 1
+Conteúdo de $_POST: Array
+(
+    [osId] => 54
+    [highlighted] => 1
+)
+
+Requisição recebida em 2024-11-22 21:36:54
+Dados recebidos - osId: 60, highlighted: 0
+Conteúdo de $_POST: Array
+(
+    [osId] => 60
+    [highlighted] => 0
+)
+
